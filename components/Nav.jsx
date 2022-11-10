@@ -20,10 +20,6 @@ export default function Nav() {
   const [nav, setNav] = useState(false);
   const [colour, setColour] = useState("transparent");
 
-  const handleNav = () => {
-    setNav(!nav);
-  };
-
   useEffect(() => {
     const changeColour = () => {
       if (window.scrollY >= 520) {
@@ -44,16 +40,14 @@ export default function Nav() {
       {({ open }) => (
         <>
           <div
-            style={{ backgroundColor: `${colour}` }}
             className=" bg-transparent mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
           >
             <div
-              style={{ backgroundColor: `${colour}` }}
               className="relative flex h-16 items-center justify-between"
             >
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-amber-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:dark-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -67,14 +61,14 @@ export default function Nav() {
                   <Link href="/">
                     <Image
                       src={logo}
-                      width={50}
-                      height={50}
-                      className="block h-8 w-auto lg:hidden"
+                      width={75}
+                      height={75}
+                      className="block h-8 w-auto "
                       alt="Logo"
                     />
                   </Link>
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="pl-7 hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
@@ -82,8 +76,8 @@ export default function Nav() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-amber-400 text-white"
-                            : "text-zinc-800 hover:bg-amber-300 hover:text-white",
+                            ? "dark-blue text-white"
+                            : "text-zinc-800 hover:bg-darkBlue hover:text-white",
                           "px-5 py-2 rounded-md text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -98,13 +92,13 @@ export default function Nav() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="rounded-full dark-blue p-2 text-white hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  className="rounded-md dark-blue p-2 text-white hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <a
                     href="https://dcuclubsandsocs.ie/society/enactus"
                     target="blank"
                   >
-                    <p className="font-mono ...">Download Now!</p>
+                    <p className="font-mono ...">Download</p>
                   </a>
                 </button>
               </div>
@@ -120,8 +114,8 @@ export default function Nav() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-amber-400 text-white"
-                      : "text-zinc-800 hover:bg-amber-300 hover:text-white",
+                      ? "dark-blue text-white"
+                      : "text-zinc-800 hover:dark-blue hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
