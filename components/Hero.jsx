@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <h3 className="text-5xl tracking-widest">
+          <h3 className="text-7xl tracking-widest">
             Protecting People&apos;s Places
           </h3>
         </div>

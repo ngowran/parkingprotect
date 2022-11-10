@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+h1, h2, h3, h4 {
+  font-family:  Gotham, sans-serif;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  font-family:  Montserrat, sans-serif;
   background-color: #5a87c5;
 }
 
