@@ -5,7 +5,11 @@ import Nav from '../components/Nav'
 export default function Home() {
   return (
     <div>
-  
+      <Head>
+        <title>Parking Protect</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Parking Protect - Proudly Protecting People's Places!" />
+      </Head>
         <Nav/>
         <Hero/>
       
