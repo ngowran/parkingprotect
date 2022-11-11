@@ -1,6 +1,7 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useState} from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {  IoLogoAppleAppstore, IoLogoGooglePlaystore } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../public/parking.png";
@@ -17,6 +18,7 @@ function classNames(...classes) {
 }
 
 export default function Nav() {
+  const [showModal, setShowModal] = useState(false);
   const [nav, setNav] = useState(false);
   const [colour, setColour] = useState("transparent");
 
@@ -35,7 +37,7 @@ export default function Nav() {
     <Disclosure
       as="nav"
       style={{ backgroundColor: `${colour}` }}
-      className="bg-transparent fixed left-0 w-full z-10 top-0 "
+      className="bg-transparent fixed left-0 w-full z-10 top-0 shadow-sm ..."
     >
       {({ open }) => (
         <>
@@ -92,16 +94,65 @@ export default function Nav() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
+                  onClick={() => setShowModal(true)}
                   className="rounded-md dark-blue p-2 text-white hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
-                  <a
-                    href="https://dcuclubsandsocs.ie/society/enactus"
-                    target="blank"
-                  >
-                    <p className="font-mono ...">Download</p>
-                  </a>
+                <p className="font-mono ...">Download</p>
                 </button>
               </div>
+              {showModal ? (
+                <>
+                  <div className=" flex overflow-x-hidden overflow-y-auto fixed inset-0 z-60 outline-none focus:outline-none">
+                    <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                      <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                      <button
+                            className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                            onClick={() => setShowModal(false)}
+                          >
+                          <span className="text-black h-6 w-6 text-2xl block ">
+                            ×
+                          </span>
+                          </button>
+                        
+                        <div className="p-5 text-center grid grid-cols-4 md:grid-flow-row">
+                        
+                          <div className="col-span-4">
+                          
+                          <p className="text-center">Download soon!</p>
+                          
+                          <br></br>
+                          </div>
+                          <div className="col-span-2 ...">
+                            <button 
+                              type="button"
+                              className="rounded-md bg-purple-300 p-2 text-white hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                            >
+                            <span className="text-black text-2xl block ">
+                            < IoLogoAppleAppstore />
+                          </span>
+                           
+                            </button>
+                          </div>
+                          <div className="col-span-2 ...">
+                            <button 
+                              type="button"
+                              className="rounded-md bg-yellow-300 p-2 text-white hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                            >
+                             <span className="text-black text-2xl block ">
+                            < IoLogoGooglePlaystore />
+                          </span>
+                            
+
+                            </button>
+                          </div>
+                         
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                </>
+              )  : null}
+
             </div>
           </div>
 
