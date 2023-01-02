@@ -2,12 +2,15 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div>
-          <h3 className="text-6xl tracking-wide text-white">
+    <div className="py-16">
+      <div className="pt-16 grid md:grid-cols-2">
+        <div className="text-center md:text-left p-5">
+          <h3 className="text-6xl  text-white">
             Protecting People&apos;s Places
           </h3>
+          <br></br>
+          <p className="text-2xl text-white">
+            Join our mission today </p>
         </div>
       </div>
     </div>

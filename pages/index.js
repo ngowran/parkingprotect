@@ -1,7 +1,8 @@
-
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import Head from 'next/head'
+import Mission from '../components/Mission'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -11,9 +12,11 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Parking Protect - Proudly Protecting People's Places!" />
       </Head>
-        <Nav/>
-        <Hero/>
-      
+      <Nav />
+      <Hero />
+      <Mission />
+      <Footer />
+
     </div>
   )
 }
