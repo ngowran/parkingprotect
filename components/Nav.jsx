@@ -20,9 +20,9 @@ function classNames(...classes) {
 export default function Nav() {
   const [showModal, setShowModal] = useState(false);
   const [nav, setNav] = useState(false);
-  const [colour, setColour] = useState("transparent");
+  const [colour, setColour] = useState("#5A87C5 ");
 
-  useEffect(() => {
+  /*useEffect(() => {
     const changeColour = () => {
       if (window.scrollY >= 520) {
         setColour("#174484");
@@ -31,7 +31,7 @@ export default function Nav() {
       }
     };
     window.addEventListener("scroll", changeColour);
-  }, []);
+  }, []);*/
 
   return (
     <Disclosure
@@ -42,7 +42,7 @@ export default function Nav() {
       {({ open }) => (
         <>
           <div
-            className=" bg-transparent mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
+            className=" mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
           >
             <div
               className="relative flex h-16 items-center justify-between"
@@ -106,7 +106,7 @@ export default function Nav() {
                     <div className="relative w-auto my-6 mx-auto max-w-3xl">
                       <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                         <button
-                          className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                          className="p-1 ml-auto border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                           onClick={() => setShowModal(false)}
                         >
                           <span className="text-black h-6 w-6 text-2xl block ">

@@ -7,15 +7,18 @@
   src: url('../fonts/GothamBold.ttf');
   font-weight: normal;
   font-style: normal;
-  }
+}
 
-h1, h2, h3, h4 {
-  font-family:  Gotham, sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: Gotham, sans-serif;
 }
 
 body {
 
-  font-family:  Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   background-color: #5a87c5;
 }
 
@@ -31,9 +34,10 @@ a {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -42,3 +46,4 @@ a {
     background: black;
   }
 }
+*/
