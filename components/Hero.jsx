@@ -1,4 +1,6 @@
 import React from "react";
+import ppapp from "../public/ppapp.png";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -11,6 +13,10 @@ const Hero = () => {
           <br></br>
           <p className="text-2xl text-white">
             Join our mission today </p>
+        </div>
+        <div className="mx-auto overflow-hidden">
+          <Image src={ppapp} alt="app screenshot" width={400} height={400} />
+
         </div>
       </div>
     </div>
