@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Mission from '../components/Mission'
 import Footer from '../components/Footer'
 import Features from '../components/Features'
+import Contact from '../components/Contact'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Mission />
+      <Contact />
       <Footer />
 
     </div>

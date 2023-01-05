@@ -1,13 +1,14 @@
 import React from "react";
 import people from "../public/people.png";
 import Image from "next/image";
+import Heading from "./Heading";
 
 export default function Mission() {
     return (
         <div className="py-16" id="mission">
             <div className="grid md:grid-cols-2 grid-cols-1">
                 <div className="text-center md:text-left p-5">
-                    <h1 className="text-6xl text-white font-bold">Our Mission</h1>
+                    <Heading title="Our Mission" />
                     <br></br>
                     <p className="text-2xl font-medium">
                         Parking Protect's mission is to support disabled

@@ -2,6 +2,7 @@ import React from "react";
 import { RiNumber1 } from "react-icons/ri";
 import { RiNumber2 } from "react-icons/ri";
 import { RiNumber3 } from "react-icons/ri";
+import Heading from "./Heading";
 
 const feature = [
     {
@@ -21,7 +22,9 @@ const feature = [
 export default function Features() {
     return (
         <div className="py-16" id="features">
-            <h1 className="text-6xl  text-center text-white font-bold">Features</h1>
+            <div className="p-5">
+                <Heading title="Features" />
+            </div>
             <br></br>
             <div className="grid md:grid-cols-3 grid-cols-1 p-4">
                 {feature.map((feature, index) => {
