@@ -26,7 +26,7 @@ export default function Features() {
             <div className="grid md:grid-cols-3 grid-cols-1 p-4">
                 {feature.map((feature, index) => {
                     return (
-                        <div className="md:p-4">
+                        <div className="p-4">
                             <div key={index} className="rounded-lg  text-center p-4" style={{ backgroundColor: "#38639F" }}>
                                 <feature.icon className="h-10 text-white text-bold w-10 p-2 mx-auto rounded-full" style={{ backgroundColor: "#83A5D3" }} />
                                 <br></br>
