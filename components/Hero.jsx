@@ -18,14 +18,14 @@ const Hero = () => {
           <br></br>
           <div className="flex justify-center md:justify-start">
             <button
-              className="bg-blue-900 text-white rounded-full px-12 py-2 mr-4 hover:scale-105"
+              className="bg-blue-900 text-white rounded-full px-12 py-2 mr-4 hover:scale-105 shadow-xl"
               onClick={() => alert("Coming soon!")}
             >
               <AiFillApple className="inline-block mr-2 lg:text-3xl text-2xl" />
               App Store
             </button>
             <button
-              className="bg-blue-900 text-white rounded-full px-12 py-2  hover:scale-105"
+              className="bg-blue-900 text-white rounded-full px-12 py-2  hover:scale-105 shadow-xl"
               onClick={() => alert("Coming soon!")}
             >
               <FaGooglePlay className="inline-block mr-2 lg:text-2xl" />

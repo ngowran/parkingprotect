@@ -11,12 +11,12 @@ const feature = [
     icon: RiNumber1,
   },
   {
-    description: "Educational content, statistics and real stories",
+    description:
+      "Blue badge permit validation and Disabled Parking Abuse Detection",
     icon: RiNumber2,
   },
   {
-    description:
-      "Blue badge permit validation and Disabled Parking Abuse Detection",
+    description: "Educational content, statistics and real stories.",
     icon: RiNumber3,
   },
 ];
@@ -34,7 +34,7 @@ export default function Features() {
             <div key={index} className="p-4">
               <div
                 key={index}
-                className="rounded-lg  text-center p-4"
+                className="rounded-lg  text-center p-4 w-full h-full"
                 style={{ backgroundColor: "#38639F" }}
               >
                 <feature.icon
