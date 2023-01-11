@@ -5,7 +5,7 @@ import Heading from "./Heading";
 
 export default function Mission() {
   return (
-    <section id="mission" className="py-32">
+    <section id="mission" className="py-36">
       <div>
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div className="text-center md:text-left p-5">

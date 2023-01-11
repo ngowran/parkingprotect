@@ -14,7 +14,7 @@ export const TeamData = [
 
   {
     image: Sadhana,
-    name: "Sadhana R Sambandan",
+    name: "Sadhana R Sambandam",
     url: "https://www.linkedin.com/in/sadhana-r-sambandam-855733250/",
     role: "Business Analyst",
   },

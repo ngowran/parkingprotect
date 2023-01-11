@@ -9,10 +9,11 @@ import Heading from "./Heading";
 const Team = () => {
   return (
     <section id="team" className="py-32">
-      <div className="w-160 md:w-320 lg:w-400 md:p-24 lg:p-32 mx-auto text-center py-24">
+      <div className="w-160 md:w-320 lg:w-400 md:p-24 lg:p-32 mx-auto text-center">
+        <div className="text-center p-5">
         <Heading title="Meet the Team" />
-
-        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-2 p-4">
+        </div>
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
           {TeamData.map((team, index) => {
             return (
               <div key={index} className="relative">
