@@ -23,7 +23,7 @@ const features = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="pt-32">
+    <section id="contact" className="py-32">
       <div>
         <div className="mx-auto text-center max-w-2xl px-2 pt-16">
           <h1 className="text-6xl text-white font-bold">Get in Touch!</h1>
@@ -34,9 +34,9 @@ export default function Contact() {
         </div>
 
         <div className="mt-10 mb-12 mx-auto items-center justify-center flex">
-          <dl className="mx-auto space-y-10 md:grid md:grid-cols-3 md:gap-x-12 md:gap-y-12 md:space-y-0">
+          <dl className="mx-auto space-y-10 md:grid md:grid-cols-3 gap-5  md:gap-y-12 md:space-y-0">
             {features.map((feature, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative mx-auto">
                 <AnimatePresence mode="wait">
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -49,6 +49,7 @@ export default function Contact() {
                       bounce: 0.5,
                     }}
                     whileHover={{ scale: 1.1 }}
+                    className="mx-auto"
                   >
                     <dt>
                       <a href={feature.link} target="blank">

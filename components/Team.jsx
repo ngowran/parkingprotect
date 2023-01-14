@@ -9,7 +9,7 @@ import Heading from "./Heading";
 const Team = () => {
   return (
     <section id="team" className="py-32">
-      <div className="w-160 md:w-320 lg:w-400 md:p-24 lg:p-32 mx-auto text-center">
+      <div className="w-160 md:w-320 lg:w-400 mx-auto text-center">
         <div className="text-center p-5">
         <Heading title="Meet the Team" />
         </div>
