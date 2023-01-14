@@ -2,6 +2,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 import { FaInstagram } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import Heading from "./Heading";
 
 const features = [
   {
@@ -26,7 +27,7 @@ export default function Contact() {
     <section id="contact" className="py-32">
       <div>
         <div className="mx-auto text-center max-w-2xl px-2 pt-16">
-          <h1 className="text-6xl text-white font-bold">Get in Touch!</h1>
+          <Heading title="Contact Us" />
           <p className="mt-4 text-xl font-medium">
             We are always looking for new ways to improve our service. If you
             have any questions or suggestions, please get in touch!
