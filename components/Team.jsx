@@ -12,8 +12,9 @@ const Team = () => {
       <div className="w-160 md:w-320 lg:w-400 mx-auto text-center">
         <div className="text-center p-5">
         <Heading title="Meet the Team" />
+        <br></br>
         </div>
-        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 px-16">
           {TeamData.map((team, index) => {
             return (
               <div key={index} className="relative">
