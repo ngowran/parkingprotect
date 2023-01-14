@@ -8,11 +8,11 @@ export default function Mission() {
   return (
     <section id="mission" className="py-32">
       <div>
-        <div className="grid md:grid-cols-2 md:pt-24 grid-cols-1">
+        <div className="grid md:grid-cols-2 grid-cols-1">
           <div className="text-center md:text-left p-5">
             <Heading title="Our Mission" />
             <br></br>
-            <p className="text-2xl font-medium">
+            <p className="text-2xl tracking-tight pl-4">
             Empower individuals with disabilities by creating a user-friendly app that allows for easy reporting of accessible parking misuse and promotes accessibility for all.<br/><br/> We strive to create a more inclusive community by holding accountable those who abuse accessible parking and highlighting the importance of accessibility for those who need it.
             </p>
           </div>
