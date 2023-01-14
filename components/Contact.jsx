@@ -54,7 +54,7 @@ export default function Contact() {
                   >
                     <dt>
                       <a href={feature.link} target="blank">
-                        <div className="absolute flex h-12 w-12 items-center justify-center rounded-md dark-blue text-white text-center">
+                        <div className="absolute flex h-12 w-12 items-center justify-center rounded-md dark-blue hover:bg-blue-600/60 text-white text-center">
                           <feature.icon
                             className="h-6 w-6"
                             aria-hidden="true"
