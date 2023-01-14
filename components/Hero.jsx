@@ -34,7 +34,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="mx-auto overflow-hidden">
+          <div className="mx-auto overflow-hidden"> 
             <Image src={ppapp} alt="app screenshot" width={400} height={400} />
           </div>
         </div>
