@@ -33,7 +33,7 @@ export default function Footer() {
         </motion.div>
         <div className="col-span-5   text-left">
           <p className="text-md">
-            <span className="font-bold">Parking Protect</span>
+            <span className="font-bold text-darkBlue text-xl">Parking Protect</span>
           </p>
           <p className="text-sm">
             <span className="font-bold">An Enactus DCU Project</span>,
@@ -68,7 +68,7 @@ export default function Footer() {
             return (
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                className="hover:text-red-500 block"
+                className="hover:text-darkBlue hover:font-bold block"
                 href={item.link}
                 target={"_blank"}
               >
