@@ -7,7 +7,7 @@ import { FaGooglePlay } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section id="hero" className="lg:py-36 md:py-24 py-44 mt-8 flex flex-wrap">
+    <section id="hero" className="lg:py-36 md:py-24 py-48 lg:mt-8 flex flex-wrap ">
       <div className="max-md:h-screen">
         <div className="grid md:grid-cols-2">
           <div className="text-center md:text-left p-5 mx-auto lg:pl-16 max-sm:mb-20">
