@@ -13,7 +13,7 @@ export default function Mission() {
             <Heading title="Our Mission" />
             <br></br>
             <p className="text-2xl tracking-tight pl-4">
-              Empower people with disabilities by creating a user-friendly app
+              Empower people with disabilities by providing a user-friendly app
               that allows for easy reporting of accessible parking misuse and
               promotes accessibility for all.
               <br />
