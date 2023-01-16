@@ -28,8 +28,8 @@ export default function Contact() {
       <div>
         <div className="mx-auto text-center max-w-2xl px-2 pt-16">
           <Heading title="Contact Us" />
-          <p className="mt-4 text-xl font-medium">
-            We are always looking for new ways to improve our service. If you
+          <p className="mt-4 text-xl font-medium tracking-tight">
+            We are always looking for new ways to improve our service. <br/>If you
             have any questions or suggestions, please get in touch!
           </p>
         </div>
