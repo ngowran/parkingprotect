@@ -71,6 +71,7 @@ export default function Footer() {
                 className="hover:text-darkBlue hover:font-bold block"
                 href={item.link}
                 target={"_blank"}
+                key={index}
               >
                 {item.des}
               </motion.a>
