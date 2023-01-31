@@ -16,8 +16,8 @@ const features = [
     icon: TfiEmail,
   },
   {
-    name: "Linkedin",
-    link: "https://www.linkedin.com/enactusdcu/",
+    name: "Parking Protect",
+    link: "https://www.linkedin.com/company/parking-protect/",
     icon: BsLinkedin,
   },
 ];
