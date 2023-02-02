@@ -17,7 +17,7 @@ export default function Heading(title) {
           }}
         >
           <h1 className="lg:text-7xl text-5xl text-white font-bold">
-            {title.title}.
+            {title.title}
           </h1>
         </motion.div>
       </AnimatePresence>

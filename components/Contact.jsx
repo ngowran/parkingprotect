@@ -24,8 +24,7 @@ const features = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32">
-      <div>
+      <div className="py-32">
         <div className="mx-auto text-center max-w-2xl px-2 pt-16">
           <Heading title="Contact Us" />
           <p className="mt-4 text-xl font-medium tracking-tight">
@@ -72,6 +71,5 @@ export default function Contact() {
           </dl>
         </div>
       </div>
-    </section>
   );
 }

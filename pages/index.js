@@ -9,7 +9,7 @@ import Team from "../components/Team";
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen scroll-smooth snap-y snap-mandatory overflow-scroll z-0 scrollbar scrollbar-track-gray-400/40 scrollbar-thumb-[#1f3c88]">
       <Head>
         <title>Parking Protect</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -18,13 +18,32 @@ export default function Home() {
           content="Parking Protect - Protecting People's Places!"
         />
       </Head>
+
       <Nav />
-      <Hero />
-      <Features />
-      <Mission />
-      <Team />
-      <Contact />
-      <Footer />
+
+      <section id="hero" className="snap-center">
+        <Hero />
+      </section>
+
+      <section id="features" className="snap-center">
+        <Features />
+      </section>
+
+      <section id="mission" className="snap-center">
+        <Mission />
+      </section>
+
+      <section id="team" className="snap-center">
+        <Team />
+      </section>
+
+      <section id="contact" className="snap-center">
+        <Contact />
+      </section>
+
+      <section id="footer" className="snap-center">
+        <Footer />
+      </section>
     </div>
   );
 }
