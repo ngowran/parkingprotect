@@ -5,6 +5,8 @@ import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../public/parking.png";
+import { AiFillApple } from "react-icons/ai";
+import { FaGooglePlay } from "react-icons/fa";
 
 const navigation = [
   { name: "Features", href: "#features", current: false },
@@ -92,6 +94,7 @@ export default function Nav() {
               </div>
               {/*Join button*/}
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
                 <button
                   type="button"
                   onClick={() => setShowModal(true)}
@@ -105,6 +108,7 @@ export default function Nav() {
                   <div className=" flex overflow-x-hidden overflow-y-auto fixed inset-0 z-60 outline-none focus:outline-none">
                     <div className="relative w-auto my-6 mx-auto max-w-3xl">
                       <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+
                         <button
                           className="p-1 ml-auto border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                           onClick={() => setShowModal(false)}
@@ -125,23 +129,18 @@ export default function Nav() {
                           <div className="col-span-2 ...">
                             <button
                               type="button"
-                              className="rounded-md bg-purple-300 p-2 text-white hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                              className="bg-blue-900 text-white rounded-full px-12 py-2 mr-4 hover:scale-105 shadow-xl"
                             >
-                              <span className="text-black text-2xl block ">
-                                < IoLogoAppleAppstore />
-                              </span>
+                              <AiFillApple className="inline-block mr-2 lg:text-3xl text-2xl" />
 
                             </button>
                           </div>
                           <div className="col-span-2 ...">
                             <button
                               type="button"
-                              className="rounded-md bg-yellow-300 p-2 text-white hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                              className="bg-blue-900 text-white rounded-full px-12 py-2 mr-4 hover:scale-105 shadow-xl"
                             >
-                              <span className="text-black text-2xl block ">
-                                < IoLogoGooglePlaystore />
-                              </span>
-
+                              <FaGooglePlay className="inline-block mr-2 lg:text-2xl" />
 
                             </button>
                           </div>

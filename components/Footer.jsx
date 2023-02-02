@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "../public/parkingblue.png";
+import logo from "../public/enactusdcu.png";
 import { motion } from "framer-motion";
 
 const Resources = [
