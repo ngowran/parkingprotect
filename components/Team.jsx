@@ -10,7 +10,7 @@ const Team = () => {
   return (
       <div className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
         <div className="absolute text-center top-[20%] md:top-24">
-        <Heading title="Meet the Team" />
+        <Heading title="Our Team" />
         <br></br>
         </div>
         <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/40 scrollbar-thumb-[#1f3c88] ">

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Heading from "./Heading";
 import { AiFillApple } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -34,9 +35,15 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="mx-auto overflow-hidden w-64 md:w-96"> 
+          <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2, duration: 1 }}
+           className="mx-auto overflow-hidden w-40 md:w-96">
+
             <Image src={ppapp} alt="app screenshot"  />
-          </div>
+
+          </motion.div>
         </div>
       </div>
     </div>

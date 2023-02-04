@@ -11,8 +11,8 @@ export default function Mission() {
           <div className="text-center md:text-left p-5">
             <Heading title="Our Mission" />
             <br></br>
-            <p className="text-2xl tracking-tight pl-4">
-              Empower people with disabilities by providing a user-friendly app
+            <p className="text-md md:text-xl tracking-tight pl-4">
+              Our mission at Parking Protect is to empower people with disabilities by providing an AI powered, user-friendly app
               that allows for easy reporting of accessible parking misuse and
               promotes accessibility for all.
               <br />

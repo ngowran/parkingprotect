@@ -7,16 +7,16 @@ import Heading from "./Heading";
 const feature = [
   {
     description:
-      "Efficient Report Generation and Navigation System to Local Authority ",
+      "Generate a report for accessible parking misuse in just a few clicks!",
     icon: RiNumber1,
   },
   {
     description:
-      "Blue badge permit validation and Disabled Parking Abuse Detection",
+      "Authorities can use data generated through Parking Protect to take action against offenders.",
     icon: RiNumber2,
   },
   {
-    description: "Educational content, statistics and real stories.",
+    description: "Parking Protect is completely free to use for all users!",
     icon: RiNumber3,
   },
 ];
@@ -24,7 +24,7 @@ const feature = [
 export default function Features() {
   return (
       <div className="flex flex-shrink flex-col relative space-y-16 overflow-hidden h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-        <div className="absolute top-20 md:top-36">
+        <div className="absolute top-36 md:top-36">
           <Heading title="Features" />
         </div>
         <br></br>
