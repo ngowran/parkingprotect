@@ -24,11 +24,10 @@ const features = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32">
-      <div>
+      <div className="py-8">
         <div className="mx-auto text-center max-w-2xl px-2 pt-16">
           <Heading title="Contact Us" />
-          <p className="mt-4 text-xl font-medium tracking-tight">
+          <p className="mt-4 text-xl tracking-tight">
             We are always looking for new ways to improve our service. <br/>If you
             have any questions or suggestions, please get in touch!
           </p>
@@ -72,6 +71,5 @@ export default function Contact() {
           </dl>
         </div>
       </div>
-    </section>
   );
 }

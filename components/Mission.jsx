@@ -6,14 +6,13 @@ import { motion } from "framer-motion";
 
 export default function Mission() {
   return (
-    <section id="mission" className="py-32">
-      <div>
-        <div className="grid md:grid-cols-2 grid-cols-1">
+      <div className="flex flex-col relative space-y-16 overflow-hidden h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+        <div className="absolute grid md:grid-cols-2 grid-cols-1">
           <div className="text-center md:text-left p-5">
             <Heading title="Our Mission" />
             <br></br>
-            <p className="text-2xl tracking-tight pl-4">
-              Empower people with disabilities by providing a user-friendly app
+            <p className="text-md md:text-xl tracking-tight pl-4">
+              Our mission at Parking Protect is to empower people with disabilities by providing an AI powered, user-friendly app
               that allows for easy reporting of accessible parking misuse and
               promotes accessibility for all.
               <br />
@@ -34,12 +33,11 @@ export default function Mission() {
               duration: 3,
               bounce: 0.5,
             }}
-            className="align-top text-center m-auto"
+            className="align-top text-center m-auto p-4"
           >
-            <Image src={people} alt="people" height={500} width={500} />
+            <Image src={people} alt="people" className="w-50 h-50" />
           </motion.div>
         </div>
       </div>
-    </section>
   );
 }

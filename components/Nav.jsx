@@ -62,7 +62,7 @@ export default function Nav() {
               </div>
               <div className="bg-transparent pt-3 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link href="/">
+                  <Link href="#hero">
                     <Image
                       src={logo}
                       width={75}
