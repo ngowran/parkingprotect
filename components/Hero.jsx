@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="flex flex-col space-y-16 overflow-hidden relative h-screen justify-center items-center text-center">
-      <div className="absolute top-24">
+      <div className="absolute m-auto items-center justify-center xl:pt-24">
         <div className="grid md:grid-cols-2">
           <div className="text-center md:text-left p-5 mx-auto lg:pl-16 max-sm:mb-20">
             <Heading title="Protecting Peoples Places" />
@@ -39,6 +39,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 1 }}
+          viewport={true}
            className="mx-auto overflow-hidden w-40 md:w-96">
 
             <Image src={ppapp} alt="app screenshot"  />

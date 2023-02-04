@@ -3,6 +3,7 @@ import { RiNumber1 } from "react-icons/ri";
 import { RiNumber2 } from "react-icons/ri";
 import { RiNumber3 } from "react-icons/ri";
 import Heading from "./Heading";
+import { motion } from "framer-motion";
 
 const feature = [
   {
@@ -31,7 +32,13 @@ export default function Features() {
         <div className="grid md:grid-cols-3 grid-cols-1 p-2 absolute">
           {feature.map((feature, index) => {
             return (
-              <div key={index} className="p-4">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.2, duration: 1 }}
+                viewport={true}
+                whileHover={{ scale: 1.1 }}
+               key={index} className="p-4">
                 <div
                   key={index}
                   className="rounded-lg  text-center p-4 w-full h-full  shadow-lg"
@@ -46,7 +53,7 @@ export default function Features() {
                     {feature.description}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
