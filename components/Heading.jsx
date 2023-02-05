@@ -15,6 +15,7 @@ export default function Heading(title) {
             duration: 3,
             bounce: 0.5,
           }}
+          viewport={{ once: true }}
         >
           <h1 className="xl:text-6xl text-2xl md:text-3xl text-white font-bold">
             {title.title}

@@ -25,7 +25,7 @@ const Team = () => {
                   initial={{ opacity: 0, y: -100 }}
                   transition={{ duration: 1.2 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={true}
+                  viewport={{ once: true }}
                   className=""
                 >
                   <Image
