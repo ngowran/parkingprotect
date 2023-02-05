@@ -9,7 +9,7 @@ import Team from "../components/Team";
 
 export default function Home() {
   return (
-    <div className="h-screen scroll-smooth snap-y snap-mandatory overflow-hidden z-0 scrollbar scrollbar-track-gray-400/40 scrollbar-thumb-[#1f3c88]">
+    <div className="h-screen scroll-smooth snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/40 scrollbar-thumb-[#1f3c88]">
       <Head>
         <title>Parking Protect</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
