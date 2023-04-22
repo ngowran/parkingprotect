@@ -42,12 +42,12 @@ export const TeamData = [
     image: Niamh,
     name: "Niamh Gowran",
     url: "https://www.linkedin.com/in/niamh-gowran-6b3b24221/",
-    role: "Software Engineer",
+    role: "Co-Founder",
   },
   {
     image: Kevin,
     name: "Kevin J. Tomescu",
     url: "https://www.linkedin.com/in/kevin-james-tomescu/",
-    role: "Founder",
+    role: "Co-Founder",
   },
 ];
