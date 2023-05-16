@@ -12,14 +12,11 @@ export default function Mission() {
           <Heading title="Our Mission" />
           <br></br>
           <p className="text-md md:text-xl tracking-tight pl-4">
-            Our mission at Parking Protect is to empower people with
-            disabilities by providing an AI powered, user-friendly app that
-            allows for easy reporting of accessible parking misuse and promotes
-            accessibility for all.
+          Our mission at Parking Protect is to empower people with disabilities by providing an AI powered, user-friendly app that allows for easy documenting of accessible parking misuse and promotes accessibility for all.
+
+
             <br />
-            <br /> We strive to foster a more inclusive community by holding
-            accountable those who abuse accessible parking and highlighting the
-            importance of accessibility for those who need it.
+            <br /> We strive to foster a more inclusive community by using a data driven approach to end abuse of accessible parking and improve accessibility policy.
           </p>
         </div>
         <motion.div
