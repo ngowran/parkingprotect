@@ -13,7 +13,7 @@ const feature = [
   },
   {
     description:
-      "Authorities can use data generated through Parking Protect to take action against offenders.",
+      "Authorities can use data generated through Parking Protect to improve their accessibility policies and protect against misuse.",
     icon: RiNumber2,
   },
   {
